@@ -2,3 +2,6 @@
 *.hidden
 *.pyc
 *.png
+*.jpg
+*.h5
+*.hidden.save
