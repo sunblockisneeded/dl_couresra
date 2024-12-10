@@ -111,7 +111,7 @@ def L_model_backward(AL, Y, caches):
 
     for l in reversed(range(L-1)):
         current_cache = caches[l]
-        dA_prev_temp, dW_temp, db_temp = backward_with_activation(dAL, current_cache, activation="relu")
+        dA_prev_temp, dW_temp, db_temp = backward_with_activation(dA_prev_temp, current_cache, activation="relu")
         grads["dA" + str(l)] = dA_prev_temp
         grads["dW" + str(l+1)] = dW_temp
         grads["db" + str(l+1)] = db_temp
