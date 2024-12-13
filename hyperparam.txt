@@ -91,6 +91,7 @@ tanh에서는 xavier(자비에르 초기화)
 dw와 k-(k+epsilon)의 변화가 대략적으로 일치한다면 dw가 맞는게 아닐까 라는 컨셉
 10-7 good! 10-5 흠  10-3 뭔가 잘못됐다
 
+dropout 과 cost function은 
 
 
 
