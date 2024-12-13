@@ -192,3 +192,8 @@ def initialize_parameters_type(layer_dims, init_type="he"):
         raise ValueError("select correct parameters init_type. 'zeros'/'random'/'he'")    
     return parameters
 
+def predict(test_x, params):
+    AL, _ = forward(test_x,params,keep_prob = 1)
+    del _
+    y_hat = (AL>=0.5).astype(int)
+    return y_hat
